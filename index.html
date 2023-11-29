@@ -3,39 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".\resources\css\index.css">
-    <title>Matterhorn</title>
+    <title>Local Harvest - Your Organic Marketplace</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #2b4022;
+            color: #fff;
+            text-align: center;
+            /*padding: 1.5em 0;/*/
+        }
+
+        header img {
+            width: 300px; /* Adjust according to your logo size */
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2b4022;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2b4022;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button:hover {
+            background-color: #1c2917;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #2b4022;
+            color: #fff;
+            /*position: absolute;*/
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <!-- Banner section -->
-    <div class="banner">
-        <h1>Matterhorn's landing banner</h1>
-        <img id="main-image" src="./resources/images/matterhorn.jpg" alt="">
-        <p>Because the sky is the limit.</p>
-        <button>Subscribe to my adventure news</button>
-    </div>
 
-    <!-- Matterhorn Section -->
-    <div>
-        <span id="matterhorn" class="bold">Matterhorn </span>
-        <p class="bold">News dedicated to Matterhorn... and only Matterhorn... 'cause it is awesome!</p>
-        <form action="">
-            <input type="text"/>
-            <input type="submit" value="Submit"/>
+    <header>
+        <img src="resources/images/fazenda-consciente-logo.png" alt="Local Harvest Logo">
+    </header>
+
+    <section>
+        <h1>Bem vindos à Fazenda Consciente!</h1>
+        <p>
+            Descubra produtos frescos e orgânicos de agricultores locais. Apoie sua comunidade e desfrute de produtos cultivados de forma sustentável e de alta qualidade.
+        </p>
+
+        <h2>Por quê Fazenda Consciente?</h2>
+        <ul>
+            <li>Apoio direto aos agricultores locais.</li>
+            <li>Produtos frescos e orgânicos.</li>
+            <li>Mercado focado na comunidade.</li>
+            <li>Transações on-line fáceis e seguras.</li>
+        </ul>
+
+        <a href="#signup" class="cta-button">Junte-se a nós!</a>
+    </section>
+
+    <section id="signup">
+        <h2>Junte-se à Fazenda Consciente</h2>
+        <p>
+            Inscreva-se agora para explorar um mundo de produtos orgânicos! Conecte-se com agricultores locais e aproveite os benefícios dos produtos locais frescos.
+        </p>
+
+        <!-- Registration Form (Adapt as needed) -->
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="cta-button">Inscrever</button>
         </form>
-        <div>
-            <ul>
-                <li>
-                    <div></div><span>Hey there, it's Matterhorn</span>
-                </li>
-                <li>
-                    <div></div><span>I'm a beautiful mountain</span>
-                </li>
-                <li>
-                    <div></div><span>Hey there, it's Matterhorn</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fazenda Consciente - Seu Marketplace de Agricultura Orgânica e Familiar</p>
+    </footer>
+
 </body>
 </html>
+
